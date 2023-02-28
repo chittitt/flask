@@ -1,0 +1,32 @@
+/* bodyタグ全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ページタイトルのスタイル */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* ページメインコンテンツのスタイル */
+  main {
+    margin: 20px 0;
+  }
+  
+  /* ボタンのスタイル */
+  button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* ボタンのホバー時のスタイル */
+  button:hover {
+    background-color: #3e8e41;
+  }
+  

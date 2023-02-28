@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>勝敗管理ツール - 過去の結果</title>
+  </head>
+  <body>
+    <header>
+      <h1>勝敗管理ツール</h1>
+      <nav>
+        <ul>
+          <li><a href="/">トップページ</a></li>
+          <li><a href="/game">ゲーム開始</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>過去の結果</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>日付</th>
+            <th>プレイヤー1</th>
+            <th>プレイヤー2</th>
+            <th>勝者</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for game in games %}
+          <tr>
+            <td>{{ game.date }}</td>
+            <td>{{ game.player1 }}</td>
+            <td>{{ game.player2 }}</td>
+            <td>{{ game.winner }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>© 2023 勝敗管理ツール</p>
+      <nav>
+        <ul>
+          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">利用規約</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
